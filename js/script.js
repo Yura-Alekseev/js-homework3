@@ -1,3 +1,24 @@
+let startBtn = document.getElementById('start');
+let budgetValue = document.getElementsByClassName('.budget-value');
+let dayBudgetValue = document.getElementsByClassName('.daybudget-value');
+let levelValue = document.getElementsByClassName('.level-value');
+let expensesValue = document.getElementsByClassName('.expenses-value');
+let optionalExpensesValue = document.getElementsByClassName('.optionalexpenses-value');
+let monthSavingsValue = document.getElementsByClassName('.monthsavings-value');
+let yearSavingsValue = document.getElementsByClassName('.yearsavings-value');
+let expensesItem = document.getElementsByClassName('.expenses-item');
+let optionalExpensesItem = document.querySelectorAll('.optionalexpenses-item');
+let expensesItemBtn = document.getElementsByTagName('button')[0];
+let optionalExpensesBtn = document.getElementsByTagName('button')[1];
+let countBudgetBtn = document.getElementsByTagName('button')[2];
+let chooseIncome = document.querySelector('.choose-income');
+let savings = document.querySelector('#savings');
+let chooseSum = document.querySelector('.choose-sum');
+let choosePercent = document.querySelector('.choose-percent');
+let yearValue = document.querySelector('.year-value');
+let monthValue = document.querySelector('.month-value');
+let dayValue = document.querySelector('.day-value');
+
 let money;
 let time;
 
@@ -80,4 +101,3 @@ let appData = {
 for (let key in appData) {
     console.log('Наша программа включает в себя данные: ' + key + ' и имеет значение ' + appData[key]);
 }
-
